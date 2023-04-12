@@ -24,3 +24,6 @@ FPPActiveData.shp
 
 CDL_Marathon_2020.TIF
 - Crop Data Layer for Marathon County for the year of 2020
+
+Watershed.shp
+- contains HUC10 shape file for all of Wisconsin, will need to clip it to the municipal boundaries
