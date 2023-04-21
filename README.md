@@ -63,19 +63,20 @@ Water Quality in Marathon County
          - 6.	2020
     - d.	Replicate this graph for each HUC10
       - i.	21 graphs
-Part II Crop Data Layer Info for each watershed
- - 1)	Locate Crop Data Layer for Marathon County Wisconsin
- - 2)	Create a dictionary with pixel identification
- - 3)	Clip by watershed inside marathon
- - 4)	Create Summary stats of top 10 crops in marathon county
- - 5)	Intersect crop data layer with Farm Land Preservation Zone 
-   - a.	Show top 10 crops under NMP
-Part III Zonal Stats for PRISM data
- - 1)	Load PRISM data for Marathon County
- - 2)	Calculate Zonal Stats for Marathon County
- - 3)	Create an animated graph for PRISM data with time as the variable
-   - a.	Should be a slider, so you can demonstrate mean precipitation overtime
- - 4)	Create a list of rainfall spike events in marathon county/correlate with P reading spikes? 
-Spatial join, group by huc10 average instead of zonal stats
+
+- Part II Crop Data Layer Info for each watershed
+  - 1)	Locate Crop Data Layer for Marathon County Wisconsin
+  - 2)	Create a dictionary with pixel identification
+  - 3)	Clip by watershed inside marathon
+  - 4)	Create Summary stats of top 10 crops in marathon county
+  - 5)	Intersect crop data layer with Farm Land Preservation Zone 
+    - a.	Show top 10 crops under NMP
+- Part III Zonal Stats for PRISM data
+  - 1)	Load PRISM data for Marathon County
+  - 2)	Calculate Zonal Stats for Marathon County
+  - 3)	Create an animated graph for PRISM data with time as the variable
+    - a.	Should be a slider, so you can demonstrate mean precipitation overtime
+  - 4)	Create a list of rainfall spike events in marathon county/correlate with P reading spikes? 
+-Spatial join, group by huc10 average instead of zonal stats
 Readin daily rainfall data, PRISM
 CDL Identify cropped area in watersheds too
