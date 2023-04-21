@@ -32,15 +32,15 @@ Watershed.shp
 Potential Outline
 Water Quality in Marathon County
 - Part 1 Graphing WQ Data
- -  2)	Marathon_WQ data
-    a.	Extract data for just Phosphorus readings
-    b.	Bin phosphorus readings every 2 years
-      i.	2009-2010
-      ii.	2011-2012
-      iii.	2013-2014
-      iv.	2015-2016
-      v.	2017-2018
-      vi.	2019-2020
+  - 2)	Marathon_WQ data
+    - a.	Extract data for just Phosphorus readings
+    - b.	Bin phosphorus readings every 2 years
+       - i.	2009-2010
+       - ii.	2011-2012
+       - iii.	2013-2014
+       - iv.	2015-2016
+       - v.	2017-2018
+       - vi.	2019-2020
     c.	Generate geographic point data using cords?
  3)	HUC10 Watershed Data
     a.	Clip HUC10 watershed shape file to municipal boundaries
