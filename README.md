@@ -32,7 +32,7 @@ Watershed.shp
 Potential Outline
 Water Quality in Marathon County
 - Part 1 Graphing WQ Data
--  2)	Marathon_WQ data
+ -  2)	Marathon_WQ data
     a.	Extract data for just Phosphorus readings
     b.	Bin phosphorus readings every 2 years
       i.	2009-2010
