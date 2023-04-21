@@ -31,37 +31,29 @@ Watershed.shp
 
 Potential Outline
 Water Quality in Marathon County
-1)	Generate Github repo w/following files
-a.	Marathon_WQ 2009-2020 (pre-cleaned)
-b.	HUC10 watershed data (either pre-clipped or clip in python)
-c.	Municipal boundary for Marthon County
-d.	Farmland preservation zoning (FPP) Data
-e.	PRISM Data
-f.	Crop Data Layer
-g.	README file
-Part 1 Graphing WQ Data
-2)	Marathon_WQ data
-a.	Extract data for just Phosphorus readings
-b.	Bin phosphorus readings every 2 years
-i.	2009-2010
-ii.	2011-2012
-iii.	2013-2014
-iv.	2015-2016
-v.	2017-2018
-vi.	2019-2020
-c.	Generate geographic point data using cords?
-3)	HUC10 Watershed Data
-a.	Clip HUC10 watershed shape file to municipal boundaries
-4)	FPP Data
-a.	Calculate the intersection of FPP types with HUC10 watersheds
-i.	No need to delineate between zone, AEA or both
-ii.	Identify the % of land HUC10 watersheds under nutrient management 
-5)	Append FPP data/% of land under nutrient management to zonal stats table
-a.	Spatial Join & group by huc10
-6)	Create a dual yaxis linear graph
-a.	Yaxis 1 = mean WQ reading in watershed
-b.	Yaxis 2 = %of land under nutrient management
-c.	Xaxis = binned time periods
+- Part 1 Graphing WQ Data
+  2)	Marathon_WQ data
+    a.	Extract data for just Phosphorus readings
+    b.	Bin phosphorus readings every 2 years
+      i.	2009-2010
+      ii.	2011-2012
+      iii.	2013-2014
+      iv.	2015-2016
+      v.	2017-2018
+      vi.	2019-2020
+    c.	Generate geographic point data using cords?
+ 3)	HUC10 Watershed Data
+    a.	Clip HUC10 watershed shape file to municipal boundaries
+ 4)	FPP Data
+    a.	Calculate the intersection of FPP types with HUC10 watersheds
+      i.	No need to delineate between zone, AEA or both
+      ii.	Identify the % of land HUC10 watersheds under nutrient management 
+ 5)	Append FPP data/% of land under nutrient management to zonal stats table
+   a.	Spatial Join & group by huc10
+ 6)	Create a dual yaxis linear graph
+   a.	Yaxis 1 = mean WQ reading in watershed
+   b.	Yaxis 2 = %of land under nutrient management
+   c.	Xaxis = binned time periods
 i.	Should have data points for the following
 1.	2010
 2.	2012
