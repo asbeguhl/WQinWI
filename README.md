@@ -29,7 +29,7 @@ Watershed.shp
 - contains HUC10 shape file for all of Wisconsin, will need to clip it to the municipal boundaries
 
 
-##Potential Outline
+# Potential Outline
 Water Quality in Marathon County
 - Part 1 Graphing WQ Data
   - 2)	Marathon_WQ data
