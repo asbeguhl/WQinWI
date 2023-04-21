@@ -41,41 +41,41 @@ Water Quality in Marathon County
        - iv.	2015-2016
        - v.	2017-2018
        - vi.	2019-2020
-    c.	Generate geographic point data using cords?
- 3)	HUC10 Watershed Data
-    a.	Clip HUC10 watershed shape file to municipal boundaries
- 4)	FPP Data
-    a.	Calculate the intersection of FPP types with HUC10 watersheds
-      i.	No need to delineate between zone, AEA or both
-      ii.	Identify the % of land HUC10 watersheds under nutrient management 
- 5)	Append FPP data/% of land under nutrient management to zonal stats table
-   a.	Spatial Join & group by huc10
- 6)	Create a dual yaxis linear graph
-   a.	Yaxis 1 = mean WQ reading in watershed
-   b.	Yaxis 2 = %of land under nutrient management
-   c.	Xaxis = binned time periods
-i.	Should have data points for the following
-1.	2010
-2.	2012
-3.	2014
-4.	2016
-5.	2018
-6.	2020
-d.	Replicate this graph for each HUC10
-i.	21 graphs
+     - c.	Generate geographic point data using cords?
+  - 3)	HUC10 Watershed Data
+     - a.	Clip HUC10 watershed shape file to municipal boundaries
+  - 4)	FPP Data
+     - a.	Calculate the intersection of FPP types with HUC10 watersheds
+       - i.	No need to delineate between zone, AEA or both
+       - ii.	Identify the % of land HUC10 watersheds under nutrient management 
+  - 5)	Append FPP data/% of land under nutrient management to zonal stats table
+    - a.	Spatial Join & group by huc10
+  - 6)	Create a dual yaxis linear graph
+    - a.	Yaxis 1 = mean WQ reading in watershed
+    - b.	Yaxis 2 = %of land under nutrient management
+    - c.	Xaxis = binned time periods
+       - i.	Should have data points for the following
+         - 1.	2010
+         - 2.	2012
+         - 3.	2014
+         - 4.	2016
+         - 5.	2018
+         - 6.	2020
+    - d.	Replicate this graph for each HUC10
+      - i.	21 graphs
 Part II Crop Data Layer Info for each watershed
-1)	Locate Crop Data Layer for Marathon County Wisconsin
-2)	Create a dictionary with pixel identification
-3)	Clip by watershed inside marathon
-4)	Create Summary stats of top 10 crops in marathon county
-5)	Intersect crop data layer with Farm Land Preservation Zone 
-a.	Show top 10 crops under NMP
+ - 1)	Locate Crop Data Layer for Marathon County Wisconsin
+ - 2)	Create a dictionary with pixel identification
+ - 3)	Clip by watershed inside marathon
+ - 4)	Create Summary stats of top 10 crops in marathon county
+ - 5)	Intersect crop data layer with Farm Land Preservation Zone 
+   - a.	Show top 10 crops under NMP
 Part III Zonal Stats for PRISM data
-1)	Load PRISM data for Marathon County
-2)	Calculate Zonal Stats for Marathon County
-3)	Create an animated graph for PRISM data with time as the variable
-a.	Should be a slider, so you can demonstrate mean precipitation overtime
-4)	Create a list of rainfall spike events in marathon county/correlate with P reading spikes? 
+ - 1)	Load PRISM data for Marathon County
+ - 2)	Calculate Zonal Stats for Marathon County
+ - 3)	Create an animated graph for PRISM data with time as the variable
+   - a.	Should be a slider, so you can demonstrate mean precipitation overtime
+ - 4)	Create a list of rainfall spike events in marathon county/correlate with P reading spikes? 
 Spatial join, group by huc10 average instead of zonal stats
 Readin daily rainfall data, PRISM
 CDL Identify cropped area in watersheds too
