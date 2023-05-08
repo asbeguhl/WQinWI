@@ -14,10 +14,10 @@ Marathon_WQ_Only.xlsx
 PRISM_ppt_tmin_tmean_tmax_tdmean_vpdmin_vpdmax_stable_4km_20090101_20201201_44.8983_-89.7591.csv
 - ppt (inches) = precipitation in inches, it should already be clipped to just marathon county
 
-MUNIBoundary.shp
+MUNIBoundary.zip>MUNIBoundary.shp
 - Main use would be to clip other datasets to just Marathon County WI
 
-FPPActiveData.shp
+FPPActiveData.zip>FPPActiveData.shp
 - FPP_Type = lists out three different tax credit levels. This column will be unimportant for this analysis, unless you want to break out by tax credit type
 - FPP_Acres = list out number of acres each Nutrient Management Plan (NMP) covers
 - Cont_expir = Farmland Preservation Agreement expiration date. Once a plot signs an agreement, the plot of land is then required to operate in an NMP for 15 years. Thus, we can use it to identify how many acres were under NMP in previous years
@@ -25,12 +25,16 @@ FPPActiveData.shp
 CDL_Marathon_2020.TIF
 - Crop Data Layer for Marathon County for the year of 2020
 
-Watershed.shp
+Watershed.zip>Watershed.shp
 - contains HUC10 shape file for all of Wisconsin, will need to clip it to the municipal boundaries
 
 
-# Potential Outline
-Water Quality in Marathon County
+# Replication Instructions
+## Step one is to download repo
+## Step two Extract zip folder contents into one folder
+## Step three is to adjust file path in each package (Part 1, 2 & 3) to the folder containing all packages
+## Step four is to run the part you wish to replicate, outline of what each part contains is listed below
+
 - Part 1 Graphing WQ Data
   - 2)	Marathon_WQ data
     - a.	Extract data for just Phosphorus readings
@@ -64,13 +68,16 @@ Water Quality in Marathon County
     - d.	Replicate this graph for each HUC10
       - i.	21 graphs
 
-- Part II Crop Data Layer Info for each watershed
-  - 1)	Locate Crop Data Layer for Marathon County Wisconsin
-  - 2)	Create a dictionary with pixel identification
-  - 3)	Clip by watershed inside marathon
-  - 4)	Create Summary stats of top 10 crops in marathon county
+- Part II Crop Data Layer (Run PartII_CropDataLayer.ipynb to replicate results)
+  - 1)	Import Crop Data Layer and Municipal Boundaries
+    - a) Match CRS'
+  - 2)	Create a dictionary that identifies pixel color to crop
+  - 3)	Apply crop names to each pixel category
+  - 4)  Aggregate categories and display percent under each USDA defined category
+  - 4)	Disaggregate major land use categories and display top 7 land uses via pie chart in each section
   - 5)	Intersect crop data layer with Farm Land Preservation Zone 
     - a.	Show top 10 crops under NMP
+    
 - Part III Zonal Stats for PRISM data
   - 1)	Load PRISM data for Marathon County
   - 2)	Calculate Zonal Stats for Marathon County
