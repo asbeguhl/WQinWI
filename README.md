@@ -35,38 +35,29 @@ Watershed.zip>Watershed.shp
 ## Step three is to adjust file path in each package (Part 1, 2 & 3) to the folder containing all packages
 ## Step four is to run the part you wish to replicate, outline of what each part contains is listed below
 
-- Part 1 Graphing WQ Data
+- Water Quality in Marathon County
+- Part I Graphing WQ Data and NMP Data
   - 2)	Marathon_WQ data
     - a.	Extract data for just Phosphorus readings
-    - b.	Bin phosphorus readings every 2 years
-       - i.	2009-2010
-       - ii.	2011-2012
-       - iii.	2013-2014
-       - iv.	2015-2016
-       - v.	2017-2018
-       - vi.	2019-2020
-     - c.	Generate geographic point data using cords?
+    - b.	Bin phosphorus readings every 3 years
+       - i.	2009-2012
+       - ii.	2013-2015
+       - iii.	2016-2018
+       - iv.	2019-2021
+     - c.	Generate geographic point data using cords
   - 3)	HUC10 Watershed Data
      - a.	Clip HUC10 watershed shape file to municipal boundaries
   - 4)	FPP Data
      - a.	Calculate the intersection of FPP types with HUC10 watersheds
        - i.	No need to delineate between zone, AEA or both
-       - ii.	Identify the % of land HUC10 watersheds under nutrient management 
+       - ii.	Identify the accumulated % of land HUC10 watersheds under nutrient management 
   - 5)	Append FPP data/% of land under nutrient management to zonal stats table
     - a.	Spatial Join & group by huc10
-  - 6)	Create a dual yaxis linear graph
-    - a.	Yaxis 1 = mean WQ reading in watershed
-    - b.	Yaxis 2 = %of land under nutrient management
-    - c.	Xaxis = binned time periods
-       - i.	Should have data points for the following
-         - 1.	2010
-         - 2.	2012
-         - 3.	2014
-         - 4.	2016
-         - 5.	2018
-         - 6.	2020
-    - d.	Replicate this graph for each HUC10
-      - i.	21 graphs
+  - 6)	Create linear graphs
+    - a.	Water quality changes over time by each HUC unit
+    - b.	NMP coverage changes over time by each HUC unit
+    - c.	Relationship between water quality change and NMP coverage change in HUC unit CW18
+
 
 - Part II Crop Data Layer (Run PartII_CropDataLayer.ipynb to replicate results)
   - 1)	Import Crop Data Layer and Municipal Boundaries
