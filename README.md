@@ -30,10 +30,10 @@ Watershed.zip>Watershed.shp
 
 
 # Replication Instructions
-## Step one is to download repo
-## Step two Extract zip folder contents into one folder
-## Step three is to adjust file path in each package (Part 1, 2 & 3) to the folder containing all packages
-## Step four is to run the part you wish to replicate, outline of what each part contains is listed below
+### Step one is to download repo
+### Step two Extract zip folder contents into one folder
+### Step three is to adjust file path in each package (Part 1: Qianqian_Water_quality.ipynb & Qianqian_code.R, 2: PartII_CropDataLayer.ipynb & 3: Jingru_part 3.ipynb) to the folder containing all packages
+### Step four is to run the part you wish to replicate, outline of what each part contains is listed below
 
 - Water Quality in Marathon County
 - Part I Graphing WQ Data and NMP Data
