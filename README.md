@@ -71,7 +71,8 @@ Watershed.zip>Watershed.shp
     
 - Part III Zonal Stats for PRISM data
   - 1)	Load PRISM data for Marathon County
-  - 2)	Graph precipitation over time, 2009 - 2020
-  - 2)	Calculate Zonal Stats for Marathon County
-  - 4)	Create a list of rainfall spike events in marathon county/correlate with P reading spikes? 
--Spatial join, group by huc10 average instead of zonal stats
+  - 2)	Create a graph for PRISM data with time as the variable
+    -  demonstrate mean precipitation overtime
+  - 3)	The precipitation and water quality datasets were merged on the date column, aligning the water quality result values with the    corresponding precipitation data.
+  - 4)	Map Generation: Maps were created to visualize the water quality result values at their respective locations, with the size of each point representing the water quality result value, and the color indicating the level of precipitation.
+  - 5）Temporal Analysis: To observe temporal patterns, the map visualizations were created for different time periods (2009-2012, 2013-2015, 2016-2018, 2019-2021).
