@@ -69,7 +69,7 @@ Watershed.zip>Watershed.shp
   - 5)	Intersect crop data layer with Farm Land Preservation Zone 
     - a.	Show top 10 crops under NMP
     
-- Part III Zonal Stats for PRISM data
+- Part III Analysis of Precipitation and Water Quality 
   - 1)	Load PRISM data for Marathon County
   - 2)	Create a graph for PRISM data with time as the variable
     -  demonstrate mean precipitation overtime
